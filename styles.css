@@ -405,6 +405,38 @@ button:focus-visible {
   color: rgba(245, 235, 216, 0.55);
 }
 
+.city-map-link,
+.city-map-placeholder {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.city-card.lit .city-map-link {
+  color: #E0A020;
+}
+
+.city-card.lit .city-map-link:hover {
+  color: #B87F13;
+}
+
+.city-card.inverted .city-map-link {
+  color: #F0BC55;
+}
+
+.city-card.inverted .city-map-link:hover {
+  color: #F5EBD8;
+}
+
+.city-map-placeholder {
+  color: rgba(18, 51, 59, 0.4);
+}
+
+.city-card.inverted .city-map-placeholder {
+  color: rgba(245, 235, 216, 0.4);
+}
+
 .city-register {
   margin-top: auto;
   display: inline-block;
