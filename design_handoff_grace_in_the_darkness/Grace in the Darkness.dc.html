@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; background: #F5EBD8; }
+  * { box-sizing: border-box; }
+  a { color: #E0A020; text-decoration: none; }
+  a:hover { color: #B87F13; }
+  ::selection { background: #E0A020; color: #F5EBD8; }
+</style>
+</helmet>
+<div style="background:#F5EBD8; color:#12333B; font-family:'Source Serif 4', Georgia, serif; min-height:100vh; overflow-x:hidden">
+
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:16px; padding:14px clamp(20px,5vw,72px); borderBottom:1px solid rgba(18,51,59,0.22); font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(18,51,59,0.78); border-bottom:1px solid rgba(18,51,59,0.22)">
+    <span>Grace in the Darkness</span>
+    <span style="color:#E0A020">Free Community Event</span>
+    <span>Oct–Nov.2026 · Aotearoa NZ</span>
+  </div>
+
+  <section style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:clamp(28px,4vw,64px); align-items:stretch; padding:clamp(32px,5vw,80px) clamp(20px,5vw,72px) clamp(24px,4vw,56px)">
+    <div style="display:flex; flex-direction:column; gap:26px; justify-content:center">
+      <div style="display:flex; align-items:center; gap:14px; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#E0A020">
+        <span>Healing · Hope · Freedom</span>
+        <span style="flex:1; height:1px; background:rgba(224,160,32,0.5)"></span>
+      </div>
+      <h1 style="margin:0; font-size:clamp(46px,7.2vw,104px); line-height:0.94; font-weight:600; letter-spacing:-0.02em; text-wrap:balance">Grace in the <em style="font-style:italic; color:#E0A020">Darkness</em></h1>
+      <p style="margin:0; font-size:clamp(20px,2.2vw,28px); font-style:italic; line-height:1.35; color:rgba(18,51,59,0.86); max-width:22ch">A five-part journey from trauma to hope</p>
+      <div style="display:flex; flex-direction:column; gap:8px; padding-top:6px; border-top:1px solid rgba(18,51,59,0.22)">
+        <div style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:rgba(18,51,59,0.55)">with</div>
+        <div style="font-size:clamp(30px,3.6vw,46px); line-height:1; font-weight:500">Cheri Peters</div>
+        <div style="font-size:16px; line-height:1.5; color:rgba(18,51,59,0.78)">International Speaker · Author · Host of <em>Celebrating Life in Recovery</em></div>
+      </div>
+      <blockquote style="margin:0; padding-left:20px; border-left:2px solid #E0A020; font-size:clamp(19px,2vw,24px); font-style:italic; line-height:1.4; max-width:32ch">You are not what happened to you—your story is still being written.</blockquote>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center">
+        <a href="#cities" style="display:inline-block; padding:15px 30px; background:#12333B; color:#F5EBD8; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase" style-hover="background:#0E2A31; color:#F5EBD8">Register your interest</a>
+        <a href="#programme" style="display:inline-block; padding:15px 30px; border:1px solid rgba(18,51,59,0.4); color:#12333B; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase" style-hover="border-color:#E0A020; color:#B87F13">See the five sessions</a>
+      </div>
+      <div style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(18,51,59,0.55)">Free admission · No bookings required · Registration optional</div>
+    </div>
+
+    <figure style="position:relative; margin:0; background:#0E2A31; padding:26px 34px 26px 26px; min-height:420px; display:flex; flex-direction:column">
+      <div style="position:absolute; top:0; right:0; bottom:0; width:8px; background:#E0A020"></div>
+      <div style="position:absolute; top:8px; left:10px; font-family:'JetBrains Mono', monospace; font-size:10px; color:#F0BC55">+</div>
+      <div style="position:absolute; bottom:8px; left:10px; font-family:'JetBrains Mono', monospace; font-size:10px; color:#F0BC55">+</div>
+      <div style="position:absolute; top:8px; right:18px; font-family:'JetBrains Mono', monospace; font-size:10px; color:#F0BC55">+</div>
+      <div style="position:absolute; bottom:8px; right:18px; font-family:'JetBrains Mono', monospace; font-size:10px; color:#F0BC55">+</div>
+      <img src="assets/cheri.jpg" alt="Cheri Peters" style="width:100%; flex:1; object-fit:cover; object-position:50% 22%; display:block; filter:saturate(0.92)" />
+      <figcaption style="padding:14px 6px 0; color:#F0BC55; font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; text-align:center">As seen on TV · Hope Channel · Firstlight · 3ABN</figcaption>
+    </figure>
+  </section>
+
+  <section id="cities" style="padding:clamp(32px,4vw,64px) clamp(20px,5vw,72px) clamp(40px,5vw,72px); border-top:1px solid rgba(18,51,59,0.22)">
+    <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:28px">
+      <h2 style="margin:0; font-size:clamp(26px,3vw,38px); font-weight:500">Three cities, one journey</h2>
+      <span style="flex:1; height:1px; background:rgba(18,51,59,0.22)"></span>
+      <span style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(18,51,59,0.55)">Register · Optional</span>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px">
+
+      <article style="position:relative; background:#F5EBD8; border:1px solid rgba(18,51,59,0.25); padding:24px 34px 24px 24px; display:flex; flex-direction:column; gap:18px">
+        <div style="position:absolute; top:0; right:0; bottom:0; width:8px; background:#12333B"></div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.1em; color:#E0A020">28–31 OCTOBER 2026</div>
+        <h3 style="margin:0; font-size:30px; font-weight:500; line-height:1.05">Mount Maunganui</h3>
+        <div style="font-size:16px; line-height:1.55; color:rgba(18,51,59,0.86)">
+          St Andrews Presbyterian Church<br />
+          Cnr Macville Road and Dee Street<br />
+          Mount Maunganui 3116
+        </div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.1em; color:rgba(18,51,59,0.55); line-height:1.7">
+          020 4111 5110<br />cheri-peters-mtsda@googlegroups.com
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSexdgAQRRcQHb9TrcAooWmN6rJJpuRYI_dZz_Y-_RaXruJ-pQ/viewform" target="_blank" rel="noopener" style="margin-top:auto; display:inline-block; padding:14px 22px; background:#12333B; color:#F5EBD8; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase" style-hover="background:#0E2A31">Register — Mount Maunganui</a>
+      </article>
+
+      <article style="position:relative; background:#0E2A31; color:#F5EBD8; padding:24px 34px 24px 24px; display:flex; flex-direction:column; gap:18px">
+        <div style="position:absolute; top:0; right:0; bottom:0; width:8px; background:#E0A020"></div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.1em; color:#F0BC55">4–7 NOVEMBER 2026</div>
+        <h3 style="margin:0; font-size:30px; font-weight:500; line-height:1.05">Hamilton</h3>
+        <div style="font-size:16px; line-height:1.55; color:rgba(245,235,216,0.8)">
+          Venue to be confirmed<br />
+          Street address to be confirmed<br />
+          Hamilton
+        </div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.1em; color:rgba(245,235,216,0.55); line-height:1.7">
+          Phone to be confirmed<br />Email to be confirmed
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSckywdBOEpSE9KdX68pFP5EzN5wghj5KhZDKJYsPw2J0TaTBA/viewform" target="_blank" rel="noopener" style="margin-top:auto; display:inline-block; padding:14px 22px; background:#E0A020; color:#0E2A31; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase" style-hover="background:#F0BC55">Register — Hamilton</a>
+      </article>
+
+      <article style="position:relative; background:#F5EBD8; border:1px solid rgba(18,51,59,0.25); padding:24px 34px 24px 24px; display:flex; flex-direction:column; gap:18px">
+        <div style="position:absolute; top:0; right:0; bottom:0; width:8px; background:#12333B"></div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:0.1em; color:#E0A020">11–14 NOVEMBER 2026</div>
+        <h3 style="margin:0; font-size:30px; font-weight:500; line-height:1.05">North Harbour</h3>
+        <div style="font-size:16px; line-height:1.55; color:rgba(18,51,59,0.86)">
+          Venue to be confirmed<br />
+          Street address to be confirmed<br />
+          North Harbour, Auckland
+        </div>
+        <div style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.1em; color:rgba(18,51,59,0.55); line-height:1.7">
+          Phone to be confirmed<br />Email to be confirmed
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7eWW1HkgBjl3I88715-DJ5gXL0411yozE_PZWFvSA_rO0qw/viewform" target="_blank" rel="noopener" style="margin-top:auto; display:inline-block; padding:14px 22px; background:#12333B; color:#F5EBD8; text-align:center; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase" style-hover="background:#0E2A31">Register — North Harbour</a>
+      </article>
+
+    </div>
+    <p style="margin:22px 0 0; font-size:15px; line-height:1.6; color:rgba(18,51,59,0.55); max-width:60ch">Admission is free and no booking is required. Registering simply helps the host church plan seating, catering and the children's programme.</p>
+  </section>
+
+  <section id="programme" style="padding:clamp(36px,5vw,72px) clamp(20px,5vw,72px); background:#0E2A31; color:#F5EBD8">
+    <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:34px">
+      <span style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#F0BC55">The Programme</span>
+      <span style="flex:1; height:1px; background:rgba(245,235,216,0.25)"></span>
+      <span style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(245,235,216,0.6)">Same in all three cities</span>
+    </div>
+    <h2 style="margin:0 0 34px; font-size:clamp(28px,3.4vw,44px); font-weight:500; max-width:26ch">Five sessions · one transformative journey</h2>
+
+    <div style="display:flex; flex-direction:column">
+      <div style="display:flex; flex-wrap:wrap; gap:24px; padding:26px 0; border-top:1px solid rgba(245,235,216,0.25)">
+        <div style="width:130px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; line-height:1.7">Session 1<br />Wednesday</div>
+        <div style="width:150px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.06em; color:rgba(245,235,216,0.72); line-height:1.7">7.00 – 9.00 pm<br />Doors 6.30 pm</div>
+        <div style="flex:1 1 280px">
+          <h3 style="margin:0 0 8px; font-size:24px; font-weight:500">From the Pit to the Path</h3>
+          <p style="margin:0; font-size:17px; line-height:1.6; color:rgba(245,235,216,0.82); max-width:58ch">A powerful story of trauma and homelessness, revealing how God meets us in our darkest moments and restores home.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:24px; padding:26px 0; border-top:1px solid rgba(245,235,216,0.25)">
+        <div style="width:130px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; line-height:1.7">Session 2<br />Thursday</div>
+        <div style="width:150px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.06em; color:rgba(245,235,216,0.72); line-height:1.7">7.00 – 9.00 pm<br />Doors 6.30 pm</div>
+        <div style="flex:1 1 280px">
+          <h3 style="margin:0 0 8px; font-size:24px; font-weight:500">Understanding Trauma</h3>
+          <p style="margin:0; font-size:17px; line-height:1.6; color:rgba(245,235,216,0.82); max-width:58ch">A compassionate look at how trauma impacts the mind, body and emotions—and why your responses make sense.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:24px; padding:26px 0; border-top:1px solid rgba(245,235,216,0.25)">
+        <div style="width:130px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; line-height:1.7">Session 3<br />Friday</div>
+        <div style="width:150px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.06em; color:rgba(245,235,216,0.72); line-height:1.7">7.00 – 9.00 pm<br />Doors 6.30 pm</div>
+        <div style="flex:1 1 280px">
+          <h3 style="margin:0 0 8px; font-size:24px; font-weight:500">Bound by Love or Fear?</h3>
+          <p style="margin:0; font-size:17px; line-height:1.6; color:rgba(245,235,216,0.82); max-width:58ch">Explore people-pleasing and relational patterns, and learn how to build healthy, God-honouring boundaries.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:24px; padding:26px 0; border-top:1px solid rgba(245,235,216,0.25)">
+        <div style="width:130px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; line-height:1.7">Session 4<br />Saturday</div>
+        <div style="width:150px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.06em; color:rgba(245,235,216,0.72); line-height:1.7">10.45 am – 12.30 pm</div>
+        <div style="flex:1 1 280px">
+          <h3 style="margin:0 0 8px; font-size:24px; font-weight:500">Rebuilding</h3>
+          <p style="margin:0; font-size:17px; line-height:1.6; color:rgba(245,235,216,0.82); max-width:58ch">Discover how healing unfolds over time and how to reclaim your identity through God's truth and grace.</p>
+        </div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; gap:24px; padding:26px 0; border-top:1px solid rgba(245,235,216,0.25); border-bottom:1px solid rgba(245,235,216,0.25)">
+        <div style="width:130px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; line-height:1.7">Session 5<br />Saturday</div>
+        <div style="width:150px; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.06em; color:rgba(245,235,216,0.72); line-height:1.7">7.00 – 9.00 pm<br />Doors 6.30 pm</div>
+        <div style="flex:1 1 280px">
+          <h3 style="margin:0 0 8px; font-size:24px; font-weight:500">The Healing Conversation</h3>
+          <p style="margin:0; font-size:17px; line-height:1.6; color:rgba(245,235,216,0.82); max-width:58ch">A guided, safe space for reflection, sharing, and prayer—helping participants process and take their next step toward freedom.</p>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1px; margin-top:38px; background:rgba(245,235,216,0.25)">
+      <div style="background:#0E2A31; padding:20px 18px; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; line-height:1.8; color:#F0BC55">Doors open<br /><span style="color:#F5EBD8">6:30 pm</span></div>
+      <div style="background:#0E2A31; padding:20px 18px; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; line-height:1.8; color:#F0BC55">Free admission<br /><span style="color:#F5EBD8">No bookings required</span></div>
+      <div style="background:#0E2A31; padding:20px 18px; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; line-height:1.8; color:#F0BC55">All are welcome<br /><span style="color:#F5EBD8">Come as you are</span></div>
+      <div style="background:#0E2A31; padding:20px 18px; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; line-height:1.8; color:#F0BC55">Children's programme<br /><span style="color:#F5EBD8">Provided each session</span></div>
+      <div style="background:#0E2A31; padding:20px 18px; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; line-height:1.8; color:#F0BC55">Please note<br /><span style="color:#F5EBD8">For mature audiences</span></div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(36px,5vw,72px) clamp(20px,5vw,72px); display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:clamp(28px,4vw,56px); align-items:start">
+    <div style="display:flex; flex-direction:column; gap:20px">
+      <div style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#E0A020">About the Speaker</div>
+      <h2 style="margin:0; font-size:clamp(28px,3.2vw,42px); font-weight:500">Cheri Peters</h2>
+      <p style="margin:0; font-size:18px; line-height:1.65; color:rgba(18,51,59,0.86); max-width:60ch; text-wrap:pretty">Cheri Peters is an international speaker, author and trauma recovery advocate. Through her television ministry <em>Celebrating Life in Recovery</em>, featured on Hope Channel, Firstlight and 3ABN, she has helped thousands discover hope after trauma, abuse and loss. Her compassionate, faith-filled presentations combine biblical truth with practical insight into emotional healing.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(18,51,59,0.55)">
+        <span style="border:1px solid rgba(18,51,59,0.25); padding:7px 12px">Hope Channel</span>
+        <span style="border:1px solid rgba(18,51,59,0.25); padding:7px 12px">Firstlight</span>
+        <span style="border:1px solid rgba(18,51,59,0.25); padding:7px 12px">3ABN</span>
+      </div>
+    </div>
+    <figure style="position:relative; margin:0; background:#0E2A31; padding:24px 32px 24px 24px">
+      <div style="position:absolute; top:0; right:0; bottom:0; width:8px; background:#E0A020"></div>
+      <div style="position:relative; width:100%; padding-top:56.25%; background:#000">
+        <iframe src="https://www.youtube-nocookie.com/embed/sTytfNNXaGk" title="Cheri Peters" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen="" style="position:absolute; inset:0; width:100%; height:100%; border:0"></iframe>
+      </div>
+      <figcaption style="padding-top:14px; color:rgba(245,235,216,0.78); font-size:15px; font-style:italic; line-height:1.5">Cheri tells her own story — from the street to a life spent helping others recover.</figcaption>
+    </figure>
+  </section>
+
+  <section style="padding:clamp(36px,5vw,72px) clamp(20px,5vw,72px); border-top:1px solid rgba(18,51,59,0.22)">
+    <div style="display:flex; align-items:baseline; gap:16px; margin-bottom:28px">
+      <span style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:#E0A020">Books</span>
+      <span style="flex:1; height:1px; background:rgba(18,51,59,0.22)"></span>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px">
+      <article style="display:grid; grid-template-columns:120px 1fr; gap:22px; border:1px solid rgba(18,51,59,0.25); padding:22px">
+        <div style="aspect-ratio:2/3; background:rgba(18,51,59,0.06); border:1px solid rgba(18,51,59,0.25); display:flex; align-items:center; justify-content:center; text-align:center; font-family:'JetBrains Mono', monospace; font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(18,51,59,0.55); padding:8px">Cover image to come</div>
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <h3 style="margin:0; font-size:24px; font-weight:500; line-height:1.15">Miracle From the Street</h3>
+          <p style="margin:0; font-size:16px; line-height:1.6; color:rgba(18,51,59,0.78)">Cheri's own account of childhood trauma, homelessness and the long road out.</p>
+          <a href="https://adventistbookcenter.com/authors/cheri-peters" target="_blank" rel="noopener" style="margin-top:auto; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase">Adventist Book Center →</a>
+        </div>
+      </article>
+      <article style="display:grid; grid-template-columns:120px 1fr; gap:22px; border:1px solid rgba(18,51,59,0.25); padding:22px">
+        <div style="aspect-ratio:2/3; background:rgba(18,51,59,0.06); border:1px solid rgba(18,51,59,0.25); display:flex; align-items:center; justify-content:center; text-align:center; font-family:'JetBrains Mono', monospace; font-size:9px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(18,51,59,0.55); padding:8px">Cover image to come</div>
+        <div style="display:flex; flex-direction:column; gap:10px">
+          <h3 style="margin:0; font-size:24px; font-weight:500; line-height:1.15">God Is Crazy About You</h3>
+          <p style="margin:0; font-size:16px; line-height:1.6; color:rgba(18,51,59,0.78)">A plain-spoken book about being loved before you have anything sorted out.</p>
+          <a href="https://adventistbookcenter.com/authors/cheri-peters" target="_blank" rel="noopener" style="margin-top:auto; font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase">Adventist Book Center →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section style="padding:clamp(40px,5vw,80px) clamp(20px,5vw,72px); background:#E0A020; color:#0E2A31; display:flex; flex-wrap:wrap; gap:28px; align-items:center; justify-content:space-between">
+    <div style="max-width:34ch">
+      <div style="font-family:'JetBrains Mono', monospace; font-size:11px; letter-spacing:0.16em; text-transform:uppercase; margin-bottom:12px">Healing · Hope · Freedom</div>
+      <h2 style="margin:0; font-size:clamp(26px,3vw,40px); font-weight:500; line-height:1.15">Come as you are. Bring someone with you.</h2>
+    </div>
+    <a href="#cities" style="display:inline-block; padding:17px 34px; background:#0E2A31; color:#F5EBD8; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase" style-hover="background:#12333B">Choose your city</a>
+  </section>
+
+  <footer style="padding:clamp(28px,4vw,56px) clamp(20px,5vw,72px); background:#0E2A31; color:rgba(245,235,216,0.78); display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:28px; font-size:15px; line-height:1.7">
+    <div>
+      <div style="font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; margin-bottom:10px">Presented by</div>
+      Mount Maunganui Seventh-day Adventist Church
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; margin-bottom:10px">Contact · Mount Maunganui</div>
+      020 4111 5110<br /><a href="mailto:cheri-peters-mtsda@googlegroups.com" style="color:#F0BC55">cheri-peters-mtsda@googlegroups.com</a>
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; margin-bottom:10px">Contact · Hamilton</div>
+      Phone to be confirmed<br />Email to be confirmed
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; margin-bottom:10px">Contact · North Harbour</div>
+      Phone to be confirmed<br />Email to be confirmed
+    </div>
+    <div>
+      <div style="font-family:'JetBrains Mono', monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#F0BC55; margin-bottom:10px">Grace in the Darkness</div>
+      Oct–Nov 2026 · Free community event
+    </div>
+  </footer>
+</div>
+</x-dc>
+</body>
+</html>

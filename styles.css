@@ -1,0 +1,769 @@
+/* Grace in the Darkness — event landing page
+   Palette: paper #F5EBD8 / ink #12333B / ink-deep #0E2A31 / gold #E0A020 / gold-soft #F0BC55 / gold-deep #B87F13 */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #F5EBD8;
+}
+
+body {
+  color: #12333B;
+  font-family: 'Source Serif 4', Georgia, serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: #E0A020;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #B87F13;
+}
+
+::selection {
+  background: #E0A020;
+  color: #F5EBD8;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #B87F13;
+  outline-offset: 2px;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+/* Shared mono chrome: every eyebrow, label, date, time, button and footer
+   heading in the design uses JetBrains Mono + uppercase. Listed once here
+   instead of repeated per-class. */
+.masthead,
+.eyebrow-rule,
+.speaker-block .label,
+.fine-print,
+.plate-tick,
+.plate figcaption,
+.section-header .tag,
+.section-header .tag-left,
+.city-date,
+.city-contact,
+.city-register,
+.programme-row .session-day,
+.programme-row .session-time,
+.fact-strip .fact,
+.about-copy .eyebrow,
+.chip-row,
+.cta-band .eyebrow,
+.btn,
+.btn-cta,
+.book-cover-placeholder,
+.book-link,
+.site-footer h3 {
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+}
+
+/* 1. Masthead */
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 14px clamp(20px, 5vw, 72px);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: rgba(18, 51, 59, 0.78);
+  border-bottom: 1px solid rgba(18, 51, 59, 0.22);
+}
+
+.masthead .accent {
+  color: #E0A020;
+}
+
+/* 2. Hero */
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(28px, 4vw, 64px);
+  align-items: stretch;
+  padding: clamp(32px, 5vw, 80px) clamp(20px, 5vw, 72px) clamp(24px, 4vw, 56px);
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  justify-content: center;
+}
+
+.eyebrow-rule {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #E0A020;
+}
+
+.eyebrow-rule .rule {
+  flex: 1;
+  height: 1px;
+  background: rgba(224, 160, 32, 0.5);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(46px, 7.2vw, 104px);
+  line-height: 0.94;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: #E0A020;
+}
+
+.hero-lede {
+  margin: 0;
+  font-size: clamp(20px, 2.2vw, 28px);
+  font-style: italic;
+  line-height: 1.35;
+  color: rgba(18, 51, 59, 0.86);
+  max-width: 22ch;
+}
+
+.speaker-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(18, 51, 59, 0.22);
+}
+
+.speaker-block .label {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: rgba(18, 51, 59, 0.55);
+}
+
+.speaker-block .name {
+  font-size: clamp(30px, 3.6vw, 46px);
+  line-height: 1;
+  font-weight: 500;
+}
+
+.speaker-block .title {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(18, 51, 59, 0.78);
+}
+
+.pull-quote {
+  margin: 0;
+  padding-left: 20px;
+  border-left: 2px solid #E0A020;
+  font-size: clamp(19px, 2vw, 24px);
+  font-style: italic;
+  line-height: 1.4;
+  max-width: 32ch;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #12333B;
+  color: #F5EBD8;
+}
+
+.btn-primary:hover {
+  background: #0E2A31;
+  color: #F5EBD8;
+}
+
+.btn-secondary {
+  border: 1px solid rgba(18, 51, 59, 0.4);
+  color: #12333B;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  border-color: #E0A020;
+  color: #B87F13;
+}
+
+.fine-print {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: rgba(18, 51, 59, 0.55);
+}
+
+.plate {
+  position: relative;
+  margin: 0;
+  background: #0E2A31;
+  padding: 26px 34px 26px 26px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plate-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+  background: #E0A020;
+}
+
+.plate-tick {
+  position: absolute;
+  font-size: 10px;
+  color: #F0BC55;
+}
+
+.plate-tick.tl { top: 8px; left: 10px; }
+.plate-tick.bl { bottom: 8px; left: 10px; }
+.plate-tick.tr { top: 8px; right: 18px; }
+.plate-tick.br { bottom: 8px; right: 18px; }
+
+.plate img {
+  width: 100%;
+  flex: 1;
+  object-fit: cover;
+  object-position: 50% 22%;
+  display: block;
+  filter: saturate(0.92);
+}
+
+.plate figcaption {
+  padding: 14px 6px 0;
+  color: #F0BC55;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-align: center;
+}
+
+/* Section headers (shared pattern: label / rule / tag) */
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 500;
+}
+
+.section-header .rule {
+  flex: 1;
+  height: 1px;
+  background: rgba(18, 51, 59, 0.22);
+}
+
+.section-header .tag {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: rgba(18, 51, 59, 0.55);
+}
+
+.section-header .tag-left {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #E0A020;
+}
+
+/* 3. Cities */
+
+.cities {
+  padding: clamp(32px, 4vw, 64px) clamp(20px, 5vw, 72px) clamp(40px, 5vw, 72px);
+  border-top: 1px solid rgba(18, 51, 59, 0.22);
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.city-card {
+  position: relative;
+  padding: 24px 34px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.city-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 8px;
+}
+
+.city-card.lit {
+  background: #F5EBD8;
+  border: 1px solid rgba(18, 51, 59, 0.25);
+}
+
+.city-card.lit::after {
+  background: #12333B;
+}
+
+.city-card.inverted {
+  background: #0E2A31;
+  color: #F5EBD8;
+}
+
+.city-card.inverted::after {
+  background: #E0A020;
+}
+
+.city-date {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.city-card.lit .city-date {
+  color: #E0A020;
+}
+
+.city-card.inverted .city-date {
+  color: #F0BC55;
+}
+
+.city-card h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.city-address {
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.city-card.lit .city-address {
+  color: rgba(18, 51, 59, 0.86);
+}
+
+.city-card.inverted .city-address {
+  color: rgba(245, 235, 216, 0.8);
+}
+
+.city-contact {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.city-card.lit .city-contact {
+  color: rgba(18, 51, 59, 0.55);
+}
+
+.city-card.inverted .city-contact {
+  color: rgba(245, 235, 216, 0.55);
+}
+
+.city-register {
+  margin-top: auto;
+  display: inline-block;
+  padding: 14px 22px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+}
+
+.city-card.lit .city-register {
+  background: #12333B;
+  color: #F5EBD8;
+}
+
+.city-card.lit .city-register:hover {
+  background: #0E2A31;
+  color: #F5EBD8;
+}
+
+.city-card.inverted .city-register {
+  background: #E0A020;
+  color: #0E2A31;
+}
+
+.city-card.inverted .city-register:hover {
+  background: #F0BC55;
+  color: #0E2A31;
+}
+
+.cities-note {
+  margin: 22px 0 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(18, 51, 59, 0.55);
+  max-width: 60ch;
+}
+
+/* 4. Programme */
+
+.programme {
+  padding: clamp(36px, 5vw, 72px) clamp(20px, 5vw, 72px);
+  background: #0E2A31;
+  color: #F5EBD8;
+}
+
+.programme .section-header .tag-left {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #F0BC55;
+}
+
+.programme .section-header .rule {
+  background: rgba(245, 235, 216, 0.25);
+}
+
+.programme .section-header .tag {
+  color: rgba(245, 235, 216, 0.6);
+}
+
+.programme h2 {
+  margin: 0 0 34px;
+  font-size: clamp(28px, 3.4vw, 44px);
+  font-weight: 500;
+  max-width: 26ch;
+}
+
+.programme-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.programme-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 26px 0;
+  border-top: 1px solid rgba(245, 235, 216, 0.25);
+}
+
+.programme-row:last-child {
+  border-bottom: 1px solid rgba(245, 235, 216, 0.25);
+}
+
+.programme-row .session-day {
+  width: 130px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #F0BC55;
+  line-height: 1.7;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.programme-row .session-time {
+  width: 150px;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: rgba(245, 235, 216, 0.72);
+  line-height: 1.7;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.programme-row .session-body {
+  flex: 1 1 280px;
+}
+
+.programme-row h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.programme-row p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(245, 235, 216, 0.82);
+  max-width: 58ch;
+}
+
+.fact-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  margin-top: 38px;
+  background: rgba(245, 235, 216, 0.25);
+}
+
+.fact-strip .fact {
+  background: #0E2A31;
+  padding: 20px 18px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  line-height: 1.8;
+  color: #F0BC55;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.fact-strip .fact span {
+  color: #F5EBD8;
+}
+
+/* 5. About the speaker */
+
+.about {
+  padding: clamp(36px, 5vw, 72px) clamp(20px, 5vw, 72px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: clamp(28px, 4vw, 56px);
+  align-items: start;
+}
+
+.about-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-copy .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #E0A020;
+}
+
+.about-copy h2 {
+  margin: 0;
+  font-size: clamp(28px, 3.2vw, 42px);
+  font-weight: 500;
+}
+
+.about-copy p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.65;
+  color: rgba(18, 51, 59, 0.86);
+  max-width: 60ch;
+  text-wrap: pretty;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: rgba(18, 51, 59, 0.55);
+}
+
+.chip {
+  border: 1px solid rgba(18, 51, 59, 0.25);
+  padding: 7px 12px;
+}
+
+.video-plate {
+  position: relative;
+  margin: 0;
+  background: #0E2A31;
+  padding: 24px 32px 24px 24px;
+}
+
+.video-plate .plate-bar {
+  background: #E0A020;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  background: #000;
+}
+
+.video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-plate figcaption {
+  padding-top: 14px;
+  color: rgba(245, 235, 216, 0.78);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* 6. Books */
+
+.books {
+  padding: clamp(36px, 5vw, 72px) clamp(20px, 5vw, 72px);
+  border-top: 1px solid rgba(18, 51, 59, 0.22);
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 22px;
+  border: 1px solid rgba(18, 51, 59, 0.25);
+  padding: 22px;
+}
+
+.book-cover-placeholder {
+  aspect-ratio: 2 / 3;
+  background: rgba(18, 51, 59, 0.06);
+  border: 1px solid rgba(18, 51, 59, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  color: rgba(18, 51, 59, 0.55);
+  padding: 8px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.book-info h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.book-info p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(18, 51, 59, 0.78);
+}
+
+.book-link {
+  margin-top: auto;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+/* 7. CTA band */
+
+.cta-band {
+  padding: clamp(40px, 5vw, 80px) clamp(20px, 5vw, 72px);
+  background: #E0A020;
+  color: #0E2A31;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-band .cta-copy {
+  max-width: 34ch;
+}
+
+.cta-band .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  margin-bottom: 12px;
+}
+
+.cta-band h2 {
+  margin: 0;
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 17px 34px;
+  background: #0E2A31;
+  color: #F5EBD8;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+}
+
+.btn-cta:hover {
+  background: #12333B;
+  color: #F5EBD8;
+}
+
+/* 8. Footer */
+
+.site-footer {
+  padding: clamp(28px, 4vw, 56px) clamp(20px, 5vw, 72px);
+  background: #0E2A31;
+  color: rgba(245, 235, 216, 0.78);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 28px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.site-footer h3 {
+  margin: 0 0 10px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: #F0BC55;
+  font-weight: normal;
+}
+
+.site-footer a {
+  color: #F0BC55;
+}
+
+/* Sections all use sharp corners, no shadows, no rounded cards — do not add border-radius or box-shadow. */
+section, article, figure {
+  border-radius: 0;
+  box-shadow: none;
+}
