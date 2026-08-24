@@ -707,7 +707,17 @@ button:focus-visible {
 }
 
 .cta-band .cta-copy {
-  max-width: 34ch;
+  max-width: 44ch;
+}
+
+.cta-band h2 {
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .cta-band h2 {
+    white-space: normal;
+  }
 }
 
 .cta-band .eyebrow {
