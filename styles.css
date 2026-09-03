@@ -436,8 +436,23 @@ button:focus-visible {
   color: rgba(245, 235, 216, 0.4);
 }
 
-.city-register {
+.city-note {
   margin-top: auto;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.city-card.lit .city-note {
+  color: rgba(18, 51, 59, 0.86);
+}
+
+.city-card.inverted .city-note {
+  color: rgba(245, 235, 216, 0.86);
+}
+
+.city-register {
+  margin-top: 10px;
   display: inline-block;
   padding: 14px 22px;
   text-align: center;
